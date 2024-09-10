@@ -1,12 +1,26 @@
 fun main() {
 
-//    val rockPlanet = arrayOf("Mercury","Venus","Earth","Mars")
+//    val rockPlanet = mutableListOf("Mercury","Venus","Earth","Mars")
 //
-//    val gasPlanets= arrayOf("Jupiter","Saturn","Uranus","Neptune")
+//    val gasPlanets= mutableListOf("Jupiter","Saturn","Uranus","Neptune")
 
-//    val solarSystem = rockPlanet + gasPlanets
+    val solarSystem = mutableSetOf("Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune")
+//    solarSystem.forEach(::print)
 
-    val solarSystem = mutableListOf("Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune")
+    println( solarSystem.indexOf("Jupiter"))
+
+
+    //Updating an array
+    solarSystem.remove( "Theia")
+    solarSystem.forEach(::print)
+
+
+      solarSystem.add("Test")
+
+
+
+
+//    val solarSystem = mutableListOf("Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune")
 
 //    println(solarSystem.indexOf("Earth"))
 
@@ -16,13 +30,13 @@ fun main() {
 //    }
 
 
-    solarSystem.remove("Mars")
-    solarSystem[3] = "Test"
+//    solarSystem.remove("Mars")
+//    solarSystem[3] = "Test"
 //    solarSystem.remove("Neptune")
 //    solarSystem.remove("Earth")
 
     //Console log Updated array
-  solarSystem.forEach(::print)
+
 
 //    for ( element in solarSystem){
 //
